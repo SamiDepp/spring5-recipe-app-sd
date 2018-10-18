@@ -38,7 +38,6 @@ public class Ingredient {
         this.amount = amount;
         this.uom = uom;
         this.recipe = recipe;
-        //Comment to git
     }
 
 }
