@@ -1,6 +1,7 @@
 package guru.springframework.domain;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -8,10 +9,6 @@ import java.util.Set;
 /**
  * Created by jt on 6/13/17.
  */
-
-// Because of the bidirectional binding==> @Lombok create an infinite loop
-    // Use @EqualsAndHashCode(exclude = {"recipes"})
-
 @Data
 @EqualsAndHashCode(exclude = {"recipes"})
 @Entity
